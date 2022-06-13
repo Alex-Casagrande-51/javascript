@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tratamento de dados</title>
     <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+
+        }
         body {
             background-color: rgb(71, 206, 209);
             color: white;
@@ -14,6 +19,10 @@
         h1, p {
             background-color: black;
             color: white;
+            text-align: center;
+            font-size: 30px;
+            padding: 8px;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
@@ -21,7 +30,17 @@
     <h1> Manipulação de dados</h1>
     <p> Manipulando em Number e String</p>
     <script>
-        
-    </script>
+        // var n1 = Number.parseInt(window.prompt('Digite um número')) //string
+        // var n2 = Number.parseInt(window.prompt('Digite outro número')) //string
+        // var soma = n1 + n2 // converter n1 para n2
+      //  window.alert('a soma dos valores é ' + soma ) // concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+        var n1 = Number(window.prompt('digite um número'))
+        var n2 = Number(window.prompt('digite outro número'))
+        var soma = n1 + n2 
+window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+    </script> 
 </body>
 </html>
