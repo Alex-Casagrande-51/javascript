@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+        body {
+            background-color: aqua;
+            font: normal 15pt arial;
+        }
+        main {
+            background-color: white;
+        }
+        main > h1  {
+            padding: 12px;
+            text-align: center;
+        }
+        main > h2 {
+            padding: 8px;
+            text-align: center;
+        }
+        main > p {
+            padding: 12px;
+            text-align: center;
+        }
+        input {
+            padding: 3px;
+            width: 150px;
+            margin: 20px;
+        }
+        div {
+            background-color: rgb(26, 137, 156);
+            padding: 8px;
+        }
+        div#botao {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            line-height: 200px;
+            padding: 20px;
+
+        }
+        footer {
+            background-color: rgb(26, 137, 156);
+        }
+        footer > p {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <H1>Multipicações</H1>
+        <h2>A seguir irar ver numeros sendo multiplicados</h2>
+        <p>somente coloca numeros</p>
+        <input type="number" name="txn1" id="txn1"> X
+        <input type="number" name="txn2" id="txn2">
+        <input type="button" value="Multiplique" onclick="multi()">
+        <div id="res"> resultado</div>
+        <script>
+            function multi() {
+            var n2 = window.document.getElementById('txn2')
+            var n1 = window.document.getElementById('txn1')
+            var res = window.document.getElementById('res')
+            var r1 = Number(n1.value)
+            var r2 = Number(n2.value)
+            var s = r1 * r2
+            res.innerText = `A multiplicação de ${r1} x ${r2} é ${s}`
+            }
+        </script>
+        <h2>Interaja</h2>
+        <div id="botao">Lá vamos nós....</div>
+        <p>APERTE</p>
+        <script>
+            var a = window.document.getElementById('botao')
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+
+            function clicar() {
+                a.innerText = 'Clicou!'
+                a.style.background = 'red'
+            
+            }
+            function entrar() {
+                a.innerHTML = 'Entrou!'
+                a.style.background = 'green'
+        
+            }
+            function sair() {
+                a.innerText = 'Saiu!'
+                a.style.background = 'yellow'
+                a.style.color = 'black'
+            }
+        </script>
+    </main>
+    <footer>
+    <p>Estudos em caminho programação Javascript, Aluno <strong>Alex Albuquerque Casagrande</strong>.</p>
+     </footer>
+
+</body>
+</html>
