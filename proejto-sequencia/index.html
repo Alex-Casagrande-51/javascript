@@ -9,19 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>Coloque uma sequencia de numero</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
-        <input type="number" name="inicio" id="inicio"> 
+        <div id="dados">
+       <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+       <p>Fim: <input type="number" name="fim" id="txtf"></p>
+       <p>Passo: <input type="number" name="passo" id="txtp"></p>
+       <p class="tamanho"><input type="button" value="contar" onclick="contar()"></p>
         
         </div>
-        <div>
-
+        <div id="res">
+            Preparando a cotagem..........
         </div>
     </section>
     <footer>
-
+        <p class="cor">&copy;Projeto-Conatagem</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
